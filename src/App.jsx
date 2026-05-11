@@ -18,11 +18,12 @@ import lovepreet from './assets/lovepreet.jpeg';
 import nitya from './assets/Nitya.jpeg';
 import payal from './assets/payal.jpeg';
 import preet from './assets/preet.jpeg';
+import Mahi from './assets/Mahi.jpeg';
 import logo from './assets/logo.png';
 import mega from './assets/mega.png';
 import event from './assets/event.png';
 import trofy from './assets/trofy.png';
-import Highlight from './assets/Highlight.png';
+import Highlight from './assets/Highlight.jpeg';
 
 /* =========================================
    HOME PAGE
@@ -229,7 +230,11 @@ function Home() {
       name:'Lovepreet',
       role:'Top Sabhyata Live Host'
     },
-
+{
+      image: Mahi,
+      name:'Megha Pathak',
+      role:'Top Sabhyata Live Host'
+    },
     {
       image: nitya,
       name:'Nitya',
