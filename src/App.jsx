@@ -18,6 +18,11 @@ import lovepreet from './assets/lovepreet.jpeg';
 import nitya from './assets/Nitya.jpeg';
 import payal from './assets/payal.jpeg';
 import preet from './assets/preet.jpeg';
+import logo from './assets/logo.png';
+import mega from './assets/mega.png';
+import event from './assets/event.png';
+import trofy from './assets/trofy.png';
+import Highlight from './assets/Highlight.png';
 
 /* =========================================
    HOME PAGE
@@ -40,38 +45,46 @@ function Home() {
   /* EVENTS */
 
   const allEvents = [
-
     {
-      title1:'Happy Birthday',
-      title2:'Lovepreet',
-      description:
-      'Celebrate with our top host and join mega gifting battles with exciting rewards.',
-      button:'Join Celebration',
-      image:
-      'https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?q=80&w=1200'
+      title1: 'The Sabhyata',
+      title2: 'Trophy 2',
+      description: 
+      'The premium tournament for Live Hosts. Compete in Host v/s Host challenges to win cash prizes and Sabhyata Live T-Shirts.',
+      button: 'Start Challenge',
+      image: 
+      trofy // Placeholder
     },
 
     {
-      title1:'Elite Galaxy',
-      title2:'Night Event',
-      description:
-      'Participate in galaxy night battles and win premium rewards.',
-      button:'Participate Now',
-      image:
-      'https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200'
+      title1: 'Mega Bonus',
+      title2: 'Exclusive Rewards',
+      description: 
+      'Special rewards for supporters! Participate from 1 May to 31 May and claim your exclusive bonuses.',
+      button: 'Claim Rewards',
+      image: 
+      mega // Placeholder
     },
 
     {
-      title1:'PK Battle',
-      title2:'Championship',
-      description:
-      'Compete with top creators and rank globally in our live event.',
-      button:'Start Battle',
-      image:
-      'https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1200'
+      title1: 'Star Talent',
+      title2: 'Fight',
+      description: 
+      'The ultimate showcase for singers and dancers. Show your talent and battle it out for the top spot.',
+      button: 'Join Fight',
+      image: 
+      event // Placeholder
+    },
+
+    {
+      title1: 'Highlight Mania',
+      title2: '& Rewards',
+      description: 
+      'Open to all platform users! Claim free coins and participate in the mania throughout the month of May.',
+      button: 'Get Free Coins',
+      image: 
+      Highlight // Placeholder
     }
-
-  ];
+];
 
   /* AUTO EVENT CHANGE */
 
@@ -241,6 +254,7 @@ function Home() {
 
     <>
       <style>{`
+      
 
         *{
           margin:0;
@@ -248,6 +262,46 @@ function Home() {
           box-sizing:border-box;
           scroll-behavior:smooth;
         }
+.logo{
+  font-size:28px;
+  font-weight:900;
+  letter-spacing:3px;
+  text-transform:uppercase;
+
+  background: linear-gradient(
+    90deg,
+    #00f5ff,
+    #ff4fd8,
+    #8b5cf6
+  );
+
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+
+  /* glow effect */
+  filter: drop-shadow(0 0 10px rgba(0,245,255,0.6));
+
+  /* animation */
+  animation: textGlow 2s infinite ease-in-out;
+}
+
+/* animation */
+@keyframes textGlow{
+  0%{
+    transform: scale(1);
+    filter: drop-shadow(0 0 8px #00f5ff);
+  }
+
+  50%{
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 20px #ff4fd8);
+  }
+
+  100%{
+    transform: scale(1);
+    filter: drop-shadow(0 0 8px #00f5ff);
+  }
+}
 
         body{
           font-family:'Poppins',sans-serif;
@@ -960,9 +1014,9 @@ function Home() {
 
         <nav className="navbar">
 
-          <div className="logo">
-            Elite Host Agency
-          </div>
+       <div className="logo">
+  ELITE HOST AGENCY
+</div>
 
           <div
             className="menu-btn"
@@ -1023,31 +1077,34 @@ function Home() {
           >
 
             <div className="badge">
-              🚀 Premium Live Agency
+             🚀 India Ki Fastest Growing Live Streaming Agency
             </div>
 
             <h1>
-              Build Your
-              <span> Streaming Empire</span>
+              Become A Star
+              <span>  Creator ✨</span>
             </h1>
 
             <p>
-              Join Elite Host Agency and become a
-              premium live creator with futuristic
-              growth and events.
+              Elite Host Agency ke saath apni live streaming journey ko next level par le jao.
+Yahan creators ko milta hai high earnings, trending support, premium events aur powerful audience growth.
             </p>
+<div className="buttons">
 
-            <div className="buttons">
+  <button
+    className="btn primary"
+    onClick={() =>
+      window.open("https://forms.gle/gbpk4JmErtAQKtuq8", "_blank")
+    }
+  >
+    Join Agency
+  </button>
 
-              <button className="btn primary">
-                Join Agency
-              </button>
+  <button className="btn secondary">
+    Explore More
+  </button>
 
-              <button className="btn secondary">
-                Explore More
-              </button>
-
-            </div>
+</div>
 
           </motion.div>
 
@@ -1056,12 +1113,12 @@ function Home() {
             <div className="stats">
 
               <div className="stat-box">
-                <h2>500+</h2>
+                <h2>100+</h2>
                 <p>Active Hosts</p>
               </div>
 
               <div className="stat-box">
-                <h2>50M+</h2>
+                <h2>10M+</h2>
                 <p>Monthly Coins</p>
               </div>
 
@@ -1090,11 +1147,11 @@ function Home() {
         <div className="title">
 
           <h2>
-            Agency Events
+           🌌 Agency Mega Events
           </h2>
 
           <p>
-            Join trending live events and win rewards
+            Trending live events join karo aur exciting rewards jeeto.
           </p>
 
         </div>
@@ -1179,11 +1236,12 @@ function Home() {
         <div className="title">
 
           <h2>
-            Why Hosts Join Us
+            💖 Hosts Humari Agency Kyun Join Karte Hain?
           </h2>
 
           <p>
-            Everything creators need to grow fast.
+            💰 High Earnings
+Gifts, PK battles aur premium bonuses se strong income build karo.
           </p>
 
         </div>
@@ -1206,8 +1264,7 @@ function Home() {
             </h3>
 
             <p>
-              Earn from gifting, PK battles and
-              premium creator bonuses.
+              Gifts, PK battles aur premium bonuses se strong income build karo.
             </p>
 
           </motion.div>
@@ -1228,8 +1285,7 @@ function Home() {
             </h3>
 
             <p>
-              Trending support and audience
-              boost for creators.
+             Trending support aur audience boost ke saath jaldi famous bano.
             </p>
 
           </motion.div>
@@ -1250,8 +1306,7 @@ function Home() {
             </h3>
 
             <p>
-              Participate in ranking battles
-              and mega campaigns.
+              Har week ranking battles aur mega campaigns ka chance.
             </p>
 
           </motion.div>
@@ -1272,8 +1327,7 @@ function Home() {
             </h3>
 
             <p>
-              Dedicated managers available
-              anytime for creators.
+              Dedicated teams hamesha aapki help ke liye available.
             </p>
 
           </motion.div>
@@ -1424,8 +1478,7 @@ function Home() {
             </h3>
 
             <p>
-              “My audience and earnings
-              increased rapidly after joining.”
+              “Elite Host Agency join karne ke baad meri audience aur earning dono fast grow hui.”
             </p>
 
           </div>
@@ -1437,8 +1490,7 @@ function Home() {
             </h3>
 
             <p>
-              “Agency support helped me
-              become a trending creator.”
+              “Agency support ne mujhe trending creator banne me help ki.”
             </p>
 
           </div>
@@ -1450,8 +1502,7 @@ function Home() {
             </h3>
 
             <p>
-              “Daily PK support improved
-              my streaming career.”
+             “Daily PK support aur events ne meri streaming career ko boost kiya.”
             </p>
 
           </div>
@@ -1524,12 +1575,11 @@ function Home() {
           </h2>
 
           <p>
-            Join Elite Host Agency today
-            and start your streaming journey.
+           Aaj hi Elite Host Agency join karo aur apni streaming journey start karo.
           </p>
 
           <a
-            href="https://wa.me/918837684263"
+            href="https://wa.me/918127684263"
             target="_blank"
             rel="noreferrer"
           >
