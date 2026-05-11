@@ -1597,7 +1597,7 @@ Gifts, PK battles aur premium bonuses se strong income build karo.
       {/* WHATSAPP */}
 
       <a
-        href="https://wa.me/918837684263"
+        href="https://wa.me/918127684263"
         target="_blank"
         rel="noreferrer"
         className="whatsapp-btn"
